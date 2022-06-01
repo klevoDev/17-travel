@@ -1,0 +1,23 @@
+// * ===== fonts ===== * //
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
+
+// * ===== null ===== * //
+@import "_nullstyle";
+
+body {
+}
+
+// * ===== bem blocks ===== * //
+@import "_blocks";
+
+// * ===== header ===== * //
+@import "_header";
+
+// * ===== main ===== * //
+@import "_page";
+
+// * ===== all sections ===== * //
+@import "_cards";
+
+// * ===== footer ===== * //
+@import "_footer";

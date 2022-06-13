@@ -54,7 +54,7 @@
     }
 
     &__heading {
-        font-family: "Noto Serif", serif;
+        font-family: $fontNotoSerif;
         font-weight: 800;
         font-size: 48px;
         line-height: 135.5%;
@@ -65,7 +65,7 @@
     }
 
     &__list {
-        font-family: "Noto Serif";
+        font-family: $fontNotoSerif;
         font-weight: 600;
         font-size: 24px;
         line-height: 137.5%;

@@ -1,11 +1,10 @@
 // * ===== fonts ===== * //
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
+@import "_fonts";
 
 // * ===== null ===== * //
+@import "_variables";
 @import "_nullstyle";
-
-body {
-}
 
 // * ===== bem blocks ===== * //
 @import "_blocks";

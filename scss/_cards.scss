@@ -35,7 +35,7 @@
     }
 
     &__title {
-        font-family: "Noto Serif", serif;
+        font-family: $fontNotoSerif;
         font-weight: 700;
         font-size: 24px;
         line-height: 137.5%;
@@ -55,12 +55,6 @@
         color: #a79997;
     }
 }
-
-// 51%-100% - 1 карточка
-// 34%-50% - 2 карточки
-// 26%-33.3334% - 3 карточки
-// 21%-25% - 4 карточки
-// ~12.5% - 20% - 5 карточек
 
 @media (max-width: 1200px) {
     .cards {

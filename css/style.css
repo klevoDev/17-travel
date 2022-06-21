@@ -73,8 +73,72 @@ h6 {
           box-sizing: content-box;
 }
 
+.case {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 15px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.title {
+  font-family: "Noto Serif", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 93%;
+}
+
+.text {
+  font-family: "Product Suns", sans-serif;
+  font-size: 18px;
+  line-height: 144%;
+  color: #a79997;
+}
+
+.ref {
+  font-family: "Product Suns", sans-serif;
+  font-size: 18px;
+  line-height: 233%;
+  color: #a79997;
+  position: relative;
+  padding-left: 25px;
+  margin-left: 5px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.ref::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 10px;
+  height: 2px;
+  background: #c4c4c4;
+  border-radius: 5px;
+}
+
+.ref:hover {
+  color: #ff715b;
+}
+
+.ref:hover::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 10px;
+  height: 2px;
+  background: #ff715b;
+  border-radius: 5px;
+}
+
 .page__cards {
   margin-bottom: 118px;
+}
+
+.page__world {
+  margin-bottom: 199px;
 }
 
 .cards__row {
@@ -364,4 +428,72 @@ h6 {
   .world__wrap-image__image {
     max-width: 100%;
   }
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -45px;
+  border: 1px solid #000;
+}
+
+.footer__column_col-1 {
+  padding: 0 45px;
+  border: 1px solid #000;
+}
+
+.footer__column_col-2 {
+  padding: 0 35px 0 45px;
+  border: 1px solid #000;
+}
+
+.footer__column_col-3 {
+  padding: 0 45px 0 35px;
+  border: 1px solid #000;
+}
+
+.footer__column_col-4 {
+  padding: 0 45px;
+  border: 1px solid #000;
+}
+
+.footer__copy {
+  font-family: "Product Suns", sans-serif;
+  font-size: 18px;
+  line-height: 144.5%;
+  text-align: center;
+  color: #a79997;
+  border-top: 1px solid #f5ebe9;
+  padding: 30px 0;
+}
+
+.footer__copy-link {
+  color: #ff715b;
+}
+
+.quick__title {
+  margin-bottom: 30px;
+}
+
+.support__title {
+  margin-bottom: 30px;
+}
+
+.newsletter__title {
+  margin-bottom: 44px;
+}
+
+.newsletter__wrap-input {
+  max-width: 300px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.newsletter__input {
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+  border: 1px solid #f5ebe9;
+  padding: 0 18px;
 }

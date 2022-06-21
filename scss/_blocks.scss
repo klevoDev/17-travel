@@ -11,3 +11,69 @@
     padding: 0 15px;
     box-sizing: content-box;
 }
+
+.case {
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+
+.title {
+    font-family: $fontNotoSerif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 93%;
+}
+
+.text {
+    font-family: $fontProductSuns;
+    font-size: 18px;
+    line-height: 144%;
+    color: #a79997;
+}
+
+.list {
+}
+
+.ref {
+    font-family: $fontProductSuns;
+    font-size: 18px;
+    line-height: 233%;
+
+    color: #a79997;
+
+    position: relative;
+    padding-left: 25px;
+    margin-left: 5px;
+
+    transition: all 0.3s ease 0s;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0;
+
+        width: 10px;
+        height: 2px;
+        background: #c4c4c4;
+        border-radius: 5px;
+    }
+
+    &:hover {
+        color: #ff715b;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 0;
+
+            width: 10px;
+            height: 2px;
+            background: #ff715b;
+            border-radius: 5px;
+        }
+    }
+}

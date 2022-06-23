@@ -1,29 +1,26 @@
 .footer {
     &__row {
         display: flex;
-        margin: 0 -45px;
-        border: 1px solid #000;
+        margin: 0 -35px;
     }
 
     &__column {
+        padding: 0 35px;
+
         &_col-1 {
-            padding: 0 45px;
-            border: 1px solid #000;
+            flex: 0 1 427px;
         }
 
         &_col-2 {
-            padding: 0 35px 0 45px;
-            border: 1px solid #000;
+            flex: 0 1 169px;
         }
 
         &_col-3 {
-            padding: 0 45px 0 35px;
-            border: 1px solid #000;
+            flex: 0 1 204px;
         }
 
         &_col-4 {
-            padding: 0 45px;
-            border: 1px solid #000;
+            flex: 0 1 400px;
         }
     }
 

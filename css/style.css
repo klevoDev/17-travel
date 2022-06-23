@@ -14,6 +14,73 @@
   font-style: normal;
 }
 
+@font-face {
+  font-display: swap;
+  font-family: "Noto Serif";
+  src: url("./../fonts/NotoSerif.woff2") format("woff2"), url("./../fonts/NotoSerif.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("./../fonts/iconfont.woff2") format("woff2"), url("./../fonts/iconfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]::before,
+[class*=" _icon-"]::before,
+[class^="_icon-"]::after,
+[class*=" _icon-"]::after {
+  font-family: "iconfont";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-line-shape:before {
+  content: "\e900";
+}
+
+._icon-world:before {
+  content: "\e901";
+}
+
+._icon-music:before {
+  content: "\e902";
+}
+
+._icon-map:before {
+  content: "\e903";
+}
+
+._icon-mail:before {
+  content: "\e904";
+}
+
+._icon-user-2:before {
+  content: "\e905";
+}
+
+._icon-serch::after {
+  content: "\e906";
+}
+
+._icon-user:before {
+  content: "\e907";
+}
+
+._icon-call:before {
+  content: "\e908";
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -60,7 +127,7 @@ h6 {
 }
 
 .wrapper {
-  margin: 50px 0;
+  margin: 30px 0;
   overflow: hidden;
   min-height: 100%;
 }
@@ -68,9 +135,6 @@ h6 {
 .container {
   max-width: 1410px;
   margin: 0 auto;
-  padding: 0 15px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
 }
 
 .case {
@@ -79,6 +143,13 @@ h6 {
   padding: 0 15px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+}
+
+.style-header {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 139%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .title {
@@ -122,15 +193,72 @@ h6 {
   color: #ff715b;
 }
 
-.ref:hover::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 10px;
-  height: 2px;
+.ref:hover::before {
   background: #ff715b;
-  border-radius: 5px;
+}
+
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__item {
+  margin-left: 70px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header__item:hover {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
+}
+
+.header__ref {
+  color: #2c2c2c;
+}
+
+.header__wrap-account {
+  position: relative;
+  padding: 0 55.5px 0 29px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header__wrap-account:hover {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
+}
+
+.header__wrap-account::before {
+  position: absolute;
+  top: 2.5px;
+  left: 0;
+  font-size: 20px;
+}
+
+.header__wrap-account::after {
+  position: absolute;
+  top: 2.5px;
+  right: 0;
+  font-size: 20px;
+}
+
+.header__account {
+  color: #2c2c2c;
+  padding-right: 20px;
+  border-right: 1px solid #f1e0dd;
 }
 
 .page__cards {
@@ -434,28 +562,35 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 -45px;
-  border: 1px solid #000;
+  margin: 0 -35px;
+}
+
+.footer__column {
+  padding: 0 35px;
 }
 
 .footer__column_col-1 {
-  padding: 0 45px;
-  border: 1px solid #000;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 427px;
+          flex: 0 1 427px;
 }
 
 .footer__column_col-2 {
-  padding: 0 35px 0 45px;
-  border: 1px solid #000;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 169px;
+          flex: 0 1 169px;
 }
 
 .footer__column_col-3 {
-  padding: 0 45px 0 35px;
-  border: 1px solid #000;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 204px;
+          flex: 0 1 204px;
 }
 
 .footer__column_col-4 {
-  padding: 0 45px;
-  border: 1px solid #000;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 400px;
+          flex: 0 1 400px;
 }
 
 .footer__copy {
